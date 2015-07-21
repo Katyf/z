@@ -1,7 +1,7 @@
 'use strict';
 
   $(document).ready(function () {
-    console.log('hi');
+    console.log('hi hi hi');
     //zip code availability
 
     $('#unavailable').hide();
