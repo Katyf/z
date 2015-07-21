@@ -25,44 +25,437 @@
     <![endif]-->
 
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">grunt</h3>
+    <nav class="navbar navbar-fixed-top nav-blue">
+      <div class="container-fluid nav-blue nav-container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#top"><img id="nav-logo" src="images/navlogo.png" alt="zyp logo"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#area_specific">About<span class="sr-only">(current)</span></a></li>
+            <li><a href="#how_it_works">How it works</a></li>
+            <li><a href="#promo">Promo</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#cleaners">For Cleaners</a></li>
+            <li><a href="#why_zyp">Why Zyp?</a></li>
+            <li><a href="#where_are_we">Where Are We?</a></li>
+            <li><a href="#small_req">Requirements</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Separated link</a></li>
+          </ul> -->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+  <div class="container-fluid">
+    <div id="top">
+      <img src="images/logo.png" alt="">
+      <div id="zipcode-overlay">
+        <form id="enter-zip">
+          <h3>Operating in select zip codes in boston</h3>
+          <input type="text" id="zipcode-input" placeholder="What's Your Zipcode?">
+          <div id="zipcode-submit" class="btn btn-default">Check zipcode</div>
+        </form>
+        <form id="unavailable">
+          <h2>Coming soon to your area</h2>
+          <p>Be alerted when Zyp is in your area and receive 20% off your first cleaning!</p>
+          <input type="text" id="email-input" placeholder="What's Your Email?">
+          <div class="btn alert-btn">NOTIFY ME!</div>
+        </form>
+        <div id="available">
+          <h2>Sign up and download today!</h2>
+          <div class="btn alert-btn">Go to App Store</div>
+        </div>
+        <!-- <div  id="down-btn">
+          <a href="#how_it_works"><i class="fa fa-angle-down"></i></a>
+        </div> -->
       </div>
+    </div>
 
-      <div class="jumbotron">
-        <h1>hey</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
-
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+    <section id="area_specific">
+      <h2>Zyp is an easy, on-demand & area-specific cleaning service in Boston</h2>
+      <h3>Choose just one room to clean or save on bundles!</h3>
+      <div class="row">
+        <div class="col-md-12" id="areas-banner">
+        <p>&nbsp;</p>
+        </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="pricing-modal-btn"><a href="" data-toggle="modal" data-target=".pricing-modal">See Pricing & Bundles</a></div>
         </div>
       </div>
 
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
+      <!-- Pricing modal -->
+      <div class="modal fade bs-example-modal-lg pricing-modal" tabindex="-1" role="dialog" aria-labelledby="pricing-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h2 class="modal-title" id="partner-modal">Pricing</h2>
+            </div>
+            <div class="modal-body">
+              <!-- Tabs -->
+              <div class="row" id="pricing-tab-btns">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#areas" aria-controls="areas" role="tab" data-toggle="tab">Area-Specific</a></li>
+                  <li role="presentation"><a href="#bundles" aria-controls="bundles" role="tab" data-toggle="tab">Bundles</a></li>
+                </ul>
+              </div>
+                <!-- Tab panes -->
+              <div class="row pricing-tabs">
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="areas">
+                    <div class="col-md-4">
+                      <div class="pricing-options">
+                        <h4 class="option">bathroom</h4>
+                        <h2 class="price">$24.<sup class="super">99</sup></h2>
+                        <p class="price-details">Includes 1 shower/tub, 1 toilet,<br> & 2 sinks<br>
+                        <a class="extradirty" href="#" data-toggle="tooltip" title="For situations such as excessive build up/clutter, post party, post maintenance or vommit and feces.">+$9.99/room Extra Dirty Fee</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="pricing-options">
+                        <h4 class="option">kitchen</h4>
+                        <h2 class="price">$34.<sup class="super">99</sup></h2>
+                        <p class="price-details">Does not include dishes<br>
+                        <a class="extradirty" href="#" data-toggle="tooltip" title="For situations such as excessive build up/clutter, post party, post maintenance or vommit and feces.">+$9.99/room Extra Dirty Fee</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="pricing-options">
+                        <h4 class="option">living room</h4>
+                        <h2 class="price">$19.<sup class="super">99</sup></h2>
+                        <p class="price-details">
+                        <a class="extradirty" href="#" data-toggle="tooltip" title="For situations such as excessive build up/clutter, post party, post maintenance or vommit and feces.">+$9.99/room Extra Dirty Fee</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="bundles">
+                    <div class="col-md-6">
+                      <div class="pricing-options">
+                        <h4 class="option">the works</h4>
+                        <h2 class="price">$59.<sup class="super">99</sup></h2>
+                        <p class="price-details">standard bathroom + kitchen + living room<br>+$4.99/room extra dirty fees</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="pricing-options">
+                        <h4 class="option">the post-party cleaning</h4>
+                        <h2 class="price">$74.<sup class="super">99</sup></h2>
+                        <p class="price-details">standard bathroom + kitchen + living room<br>All extra dirty fees included</p>
+                      </div>
+                    </div>
 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how_it_works">
+      <h2>Request a cleaning in 3 simple steps</h2>
+      <div class="steps-container row">
+        <div class="col-md-4">
+          <div class="circle-step">1</div>
+          <h3>Select</h3>
+          <p>the room(s) you would like to have cleaned</p>
+        </div>
+        <div class="col-md-4">
+          <div class="circle-step">2</div>
+          <h3>Review</h3>
+          <p>and confirm your order</p>
+        </div>
+        <div class="col-md-4">
+          <div class="circle-step">3</div>
+          <h3>Sit Back, Relax</h3>
+          <p>a verified and professional cleaner will arrive at your door in a zyp!</p>
+        </div>
+    </section>
+
+   <section id="promo">
+    <p>Sign up today and receive 20%off your first cleaning with code:</p>
+    <h2>Summer2015</h2>
+
+   </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <div class="swiper-container">
+      <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" style="background-image:url(images/dummyphone1.png)"></div>
+          <div class="swiper-slide" style="background-image:url(images/dummyphone2.png)"></div>
+          <div class="swiper-slide" style="background-image:url(images/dummyphone3.png)"></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </section>
+
+  <section id="cleaners">
+    <h2>Register now & make money on demand!</h2>
+    <div class="steps-container row">
+        <div class="col-md-3">
+          <div class="circle-step"><img class="cleaners-icon" src="images/boss.png"></div>
+          <h3>Be Your Own Boss</h3>
+          <p>Choose when and where you want to work</p>
+        </div>
+        <div class="col-md-3">
+          <div class="circle-step"><img class="cleaners-icon" src="images/carry.png"></div>
+          <h3>Customer Provides Supplies</h3>
+          <p> There is no need to lug around a big bag!</p>
+        </div>
+        <div class="col-md-3">
+          <div class="circle-step"><img class="cleaners-icon" src="images/dollar.png"></div>
+          <h3>Direct Deposit Earnings</h3>
+          <p>We will zyp your earnings right into your account!</p>
+        </div>
+        <div class="col-md-3">
+          <div class="circle-step"><img class="cleaners-icon" src="images/logo.png"></div>
+          <h3>Zyp Support Team</h3>
+          <p>We are always here and ready to help</p>
+        </div>
+      </div>
+      <div id="cleaners-modal-btn"><a href="" data-toggle="modal" data-target=".cleaner-modal">Learn More</a></div>
+
+      <!-- Learn more modal -->
+      <div class="modal fade bs-example-modal-lg cleaner-modal" tabindex="-1" role="dialog" aria-labelledby="cleaner-modal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h2 class="modal-title" id="partner-modal">Become a Zyp Partner</h2>
+            </div>
+            <div class="modal-body">
+              <h1 class="support-info">Registering is Quick and Easy </h1>
+              <div class="row  cleaner-modal-row">
+                <div class="col-md-4">
+                  <div class="registration zyp-partner"><img class="reg-icon" src="images/write.png"></div>
+                  <p class="caption">Fill out application</p>
+                </div>
+                <div class="col-md-4">
+                  <div class="registration zyp-partner"><img class="reg-icon" src="images/handshake.png"></div>
+                  <p class="caption">In-person interview/Test clean</p>
+                </div>
+                <div class="col-md-4">
+                  <div class="registration zyp-partner"><img class="reg-icon" src="images/thumb.png"></div>
+                  <p class="caption">Begin accepting jobs</p>
+                </div>
+              </div>
+              <div class="row cleaner-modal-row" id="refer">
+                <div class="col-md-12"><h1>Get $5 for every friend you refer!</h1></div>
+              </div>
+              <div class="row cleaner-modal-row">
+                <div class="col-md-4">
+                  <div class="benefits zyp-partner"><img class="benefits-icon bottles" src="images/bottleicons.png"></div>
+                  <p class="caption">The customer provides them!<br>
+                    No need to lug around heavy supplies</p>
+                </div>
+                <div class="col-md-4">
+                  <div class="benefits zyp-partner"><img class="benefits-icon" src="images/calwhite.png"></div>
+                  <p class="caption">You decide when and where you work</p>
+                </div>
+                <div class="col-md-4">
+                  <div class="benefits zyp-partner"><img class="benefits-icon" src="images/dollar.png"></div>
+                  <p class="caption">Zyp will direct deposit earnings into your bank account</p>
+                </div>
+              </div>
+              <div class="row cleaner-modal-row" id="reqs-row">
+                <div class="col-md-12">
+                  <span class="line">&nbsp;</span><img id="reqs" src="images/checklistblue.png" alt=""><span class="line">&nbsp;</span>
+                  <h1>Requirements</h1>
+                  <p>Must have cleaning experience</p>
+                  <p>Must pass background check</p>
+                  <p>Must speak English</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="why_zyp" class="container-fluid">
+    <h2>Why Zyp?</h2>
+
+    <div class="row">
+      <div class="col-md-3 reason" id="">
+        <div class="">
+          <h4>Area Specific</h4>
+          <img class="whyzyp-icon" src="images/areaspecificblue.png">
+          <p>Hate having to have your entire place cleaned? Perfect. We will clean something as small as just a single bathroom!</p>
+        </div>
+      </div>
+      <div class="col-md-3 reason" id="">
+        <div class="">
+          <h4>On-demand</h4>
+          <img class="whyzyp-icon" src="images/phoneblue.png">
+          <p>A cleaner should be there within an hour of requesting!</p>
+        </div>
+      </div>
+      <div class="col-md-3 reason" id="">
+        <div class="">
+          <h4>Save Time</h4>
+          <img class="whyzyp-icon" src="images/clock.png">
+          <p>Sit back, relax and spend time doing what you love to do. We sure know cleaning is not one of those!</p>
+        </div>
+      </div>
+      <div class="col-md-3 reason" id="">
+        <div class="">
+          <h4>Quality</h4>
+          <img class="whyzyp-icon" src="images/checkblue.png">
+          <p>Our curated network of verified cleaning professionals ensures that every room Zyp cleans is left sparkling.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 reason" id="">
+        <div class="">
+          <h4>Split the Bill</h4>
+          <img class="whyzyp-icon" src="images/split.png">
+          <p>Easily split the bill with roommates right on the app.</p>
+        </div>
+      </div>
+      <div class="col-md-3 reason" id="">
+        <div class="">
+          <h4>Flat Rate/Cashless</h4>
+          <img class="whyzyp-icon" src="images/nocash.png">
+          <p>No minimum, no tip, & no cash payments.</p>
+        </div>
+      </div>
+      <div class="col-md-3 reason" id="">
+        <div class="">
+          <h4>Safe</h4>
+          <img class="whyzyp-icon" src="images/shield.png">
+          <p>We take safety very seriously at Zyp and have a rigorous verification process to ensure our network is as safe as it can be.</p>
+        </div>
+      </div>
+      <div class="col-md-3 reason" id="">
+        <div class="">
+          <h4>Rating System</h4>
+          <img class="whyzyp-icon" src="images/star.png">
+          <p>Rate your cleaner after each clean to help us maintain quality service.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="where_are_we">
+    <h2>Where are we?</h2>
+   <!--  <div id="map"></div> --><!--
+   <img src="images/map02116.png" alt=""> -->
+  </section>
+
+  <section id="small_req">
+    <h2>A small requirement from you</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/bottleicons.png" alt="" id="bottles">
+        <div class="restrict-width">
+          <h4>You provide it, we clean it!</h4>
+          <p>Whether it be 100% plant based or your preferred product. We want to be sure to use what it is that you are used too!</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="images/door.png" alt="" id="door">
+        <div class="restrict-width">
+          <h4>You must be home</h4>
+          <p>In order to provide cleaners with clear directions, minimize any miscommunications and ensure the highest overall quality and customer satisfaction.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="download">
+    <h2>Coming soon</h2>
+    <p>For iOS</p>
+
+  </section>
+
+  </div>
+
+  <!-- END CONTAINER -->
+
+  <!-- Modals -->
+  <!-- Support modal -->
+
+    <div class="modal fade bs-example-modal-lg support-modal" tabindex="-1" role="dialog" aria-labelledby="support-modal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="support-modal">Support</h2>
+          </div>
+          <div class="modal-body">
+            <p class="support-copy">We love hearing from you! For questions, comments, or customer service needs, call or email us.</p>
+            <h1 class="support-info"><i class="fa fa-phone"></i>&nbsp;123-456-7890</h1>
+            <h1 class="support-info"><i class="fa fa-envelope-o"></i>&nbsp;help@zypapp.com</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Terms modal -->
+
+    <div class="modal fade bs-example-modal-lg terms-modal" tabindex="-1" role="dialog" aria-labelledby="terms-modal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="terms-modal">Terms</h2>
+          </div>
+          <div class="modal-body">
+            <div class="well" id="terms-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor velit euismod massa tempus venenatis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed laoreet massa nec turpis fringilla placerat. Ut vel pulvinar ante. Nulla hendrerit arcu egestas, aliquet nulla quis, mattis nisl. Vivamus euismod at libero et consectetur. Fusce tortor tellus, ultrices vitae consequat non, ullamcorper quis risus. Cras ut magna a lectus maximus sollicitudin elementum quis libero. Donec sed est sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque eu mattis lorem. Mauris suscipit, libero cursus placerat iaculis, erat odio dictum leo, ut semper enim erat et est. In mollis, diam ac pretium scelerisque, erat turpis volutpat purus, at tincidunt enim lacus ac purus.</p>
+
+              <p>Duis laoreet quis dui non maximus. Pellentesque a elit at erat porta vehicula. Cras turpis orci, aliquet sed tincidunt a, ornare tincidunt orci. Vivamus eu sem at augue rutrum aliquam congue ut lacus. Pellentesque aliquet odio nec magna posuere, a euismod erat eleifend. Praesent non congue massa. Pellentesque ac ex non mauris dictum auctor. Suspendisse potenti. Aliquam erat volutpat. Suspendisse iaculis neque quam, dapibus facilisis lectus vestibulum ac.</p>
+
+              <p>Cras venenatis neque sed finibus malesuada. In auctor ornare enim egestas mattis. Aliquam viverra ex id arcu sollicitudin sodales. Fusce iaculis, nulla eu dapibus varius, magna turpis auctor sapien, in efficitur magna enim sed nunc. Vestibulum fringilla tincidunt elit, sed pellentesque turpis porta id. Vivamus vestibulum turpis sem, ut euismod lorem sagittis vitae. Nunc non mauris eget enim venenatis faucibus sit amet eget dolor. Phasellus pulvinar justo purus, a porta ante hendrerit quis. Maecenas nec sem erat. Aenean finibus nibh in blandit lobortis. Nulla congue convallis arcu et porttitor. Integer aliquam nibh vitae hendrerit venenatis. Praesent pharetra scelerisque risus, a pretium felis tristique mollis.</p>
+
+              <p>Duis laoreet quis dui non maximus. Pellentesque a elit at erat porta vehicula. Cras turpis orci, aliquet sed tincidunt a, ornare tincidunt orci. Vivamus eu sem at augue rutrum aliquam congue ut lacus. Pellentesque aliquet odio nec magna posuere, a euismod erat eleifend. Praesent non congue massa. Pellentesque ac ex non mauris dictum auctor. Suspendisse potenti. Aliquam erat volutpat. Suspendisse iaculis neque quam, dapibus facilisis lectus vestibulum ac.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="support-terms-btns"><a href="" data-toggle="modal" data-target=".support-modal">Support</a>
+        <a href="" data-toggle="modal" data-target=".terms-modal"> Terms</a></p>
+        <p class="social-btns">
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+        </p>
+      </div>
     </div>
 
 
