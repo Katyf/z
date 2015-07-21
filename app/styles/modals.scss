@@ -1,0 +1,33 @@
+.modal-header {
+  text-align: center;
+  background-color: #53affd;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+
+.support-modal {
+  .modal-body {
+    text-align: center;
+    padding: 100px;
+    font-weight: 300;
+    .support-copy {
+      font-size: 25px;
+      margin-bottom: 50px;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 300;
+    }
+  }
+
+}
+
+#terms-modal {
+  #terms-text {
+    text-align: left;
+    overflow: scroll;
+    height: 400px;
+  }
+
+}

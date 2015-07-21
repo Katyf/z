@@ -1,0 +1,16 @@
+#small_req {
+  background-color: #53affd;
+  padding: 100px 0;
+  color: white;
+  .row {
+    margin-top: 100px;
+    .restrict-width {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+  }
+  img {
+    height: 150px;
+    margin-bottom: 40px;
+  }
+}

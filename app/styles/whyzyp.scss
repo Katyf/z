@@ -1,0 +1,24 @@
+#why_zyp {
+  padding: 100px 0;
+  background-color: #292929;
+  color: white;
+  .row {
+    margin-top: 20px;
+    p {
+      padding: 20px;
+      margin:0;
+    }
+  }
+}
+
+.reason {
+  .glyphicon {
+    font-size: 75px;
+    color: #53affd;
+  }
+  .whyzyp-icon {
+    width: 75px;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}

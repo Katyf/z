@@ -1,7 +1,16 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$icon-font-path: '../fonts/';
 // bower:scss
-@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "howitworks.scss";
+@import "features.scss";
+@import "whyzyp.scss";
+@import "where.scss";
+@import "smallreq.scss";
+@import "modals.scss";
+@import "download.scss";
+@import "cleaners.scss";
+@import "areaspecific.scss";
 
 // global styles
 

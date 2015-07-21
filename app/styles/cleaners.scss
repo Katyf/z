@@ -1,0 +1,80 @@
+#cleaners {
+  padding-top: 100px;
+}
+
+.cleaners-icon {
+  height: 100px;
+}
+
+#cleaners-modal-btn {
+  a {
+    color: #53affd;
+    font-size: 20px;
+    border: 3px solid #53affd;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.cleaner-modal {
+  h1 {
+    font-weight: 300;
+  }
+  #reqs {
+    display: inline-block;
+    margin: -20px 40px 0 40px;
+  }
+  .line{
+    border-top: 5px solid #53affd;
+    display: inline-block;
+    width: 33%;
+
+  }
+  #reqs-row {
+    h1 {
+      margin: 30px 0;
+    }
+    padding-bottom: 30px;
+  }
+}
+
+p.caption {
+  padding: 15px;
+}
+
+.cleaner-modal-row {
+  margin: 50px 0;
+}
+
+#refer {
+  background-color: #53affd;
+  color: white;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+div.zyp-partner {
+  padding: 15px;
+  height: 90px;
+  width: 90px;
+  margin: 0 auto;
+  border-radius: 200px;
+  border: 5px solid #53affd;
+}
+
+.reg-icon{
+  height: 50px;
+}
+
+div.benefits{
+  background-color: #53affd;
+  .benefits-icon {
+     height: 50px;
+     &.bottles {
+      height: 35px;
+      margin: 6px 0 0 -7px;
+     }
+  }
+}
