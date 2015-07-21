@@ -54,24 +54,24 @@
 
     //phone slider
 
-    // var mySwiper = new Swiper ('.swiper-container', {
-    //   direction: 'horizontal',
-    //   loop: true,
-    //   pagination: '.swiper-pagination',
-    //   nextButton: '.swiper-button-next',
-    //   prevButton: '.swiper-button-prev',
-    //   effect: 'coverflow',
-    //   grabCursor: true,
-    //   centeredSlides: true,
-    //   slidesPerView: 3,
-    //   coverflow: {
-    //      rotate: -30,
-    //      stretch: 0,
-    //      depth: 100,
-    //      modifier: 1,
-    //      slideShadows: false
-    //   }
-    // });
+    var mySwiper = new Swiper ('.swiper-container', {
+      direction: 'horizontal',
+      loop: true,
+      pagination: '.swiper-pagination',
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 3,
+      coverflow: {
+         rotate: -30,
+         stretch: 0,
+         depth: 100,
+         modifier: 1,
+         slideShadows: false
+      }
+    });
 
   });
 
