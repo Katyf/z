@@ -2,16 +2,15 @@
 
   $(document).ready(function () {
     console.log('hi hi hi');
-    //zip code availability
 
+    //zip code availability
     $('#unavailable').hide();
     $('#available').hide();
-
     $('#enter-zip').on('submit', function(e){
       e.preventDefault();
        var zipcode = $('#zipcode-input').val();
       $('#enter-zip').hide();
-      if (zipcode === '123456') {
+      if (zipcode === '02116') {
         $('#available').fadeIn();
         console.log('available!');
       } else {
@@ -23,7 +22,7 @@
 
     $('.extradirty').tooltip();
 
-    // scrolling
+    // smooth scrolling
 
      $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
@@ -37,23 +36,36 @@
         });
       });
 
+     // changing nav bar from white to blue based on section bg color
      $(window).on('scroll', function(){
+      //accounting for differing browser and window heights
       var pos = $(window).scrollTop();
-      if (pos > 2330 && pos < 3123) {
+      var sectionHeight = $(document).height() / 10;
+      // var promoTop = sectionHeight * 3;
+      // var promoBottom = sectionHeight * 4;
+      var whereTop = sectionHeight * 7;
+      var reqBottom = sectionHeight * 9 - 5;
+
+      // if (pos > promoTop && pos < promoBottom) {
+      //   $('nav').addClass('nav-white');
+      //   $('#nav-logo').hide();
+      //   $('#nav-logo-blue').show();
+      //   console.log('inversed');
+      // }else
+      if (pos > whereTop && pos < reqBottom) {
         $('nav').addClass('nav-white');
-        console.log('inversed');
-      }else if (pos > 5505 && pos < 7088) {
-        $('nav').addClass('nav-white');
+        $('#nav-logo').hide();
+        $('#nav-logo-blue').show();
         console.log('inversed');
       } else {
        $('nav').removeClass('nav-white');
+       $('#nav-logo-blue').hide();
+        $('#nav-logo').show();
        console.log('normal');
       }
     });
 
-
     //phone slider
-
     var mySwiper = new Swiper ('.swiper-container', {
       direction: 'horizontal',
       loop: true,

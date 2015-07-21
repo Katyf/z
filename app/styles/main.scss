@@ -65,6 +65,10 @@ a  {
 #nav-logo {
   height: 50px;
 }
+#nav-logo-blue {
+  height: 50px;
+  display: none;
+}
 
 #top {
   text-align: center;
@@ -130,9 +134,19 @@ input {
 }
 
 #promo {
-  background-color: #52affd;
-  color: white;
-  padding: 300px;
+  padding: 200px 0;
+  #promo-inner{
+    background-color: #52affd;
+    color: white;
+    padding: 100px 0;
+    p {
+    font-size: 30px;
+    }
+    h2 {
+      font-size: 120px;
+      letter-spacing: 5px;
+    }
+  }
 }
 
 .footer {
