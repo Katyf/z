@@ -25,6 +25,10 @@ body {
   }
 }
 
+.container {
+  padding: 0;
+  margin: 0;
+}
 .container-fluid {
   padding: 0;
   margin: 0;
@@ -178,9 +182,12 @@ input {
   height: 60px;
   text-align: center;
   .support-terms-btns {
-    a:hover {
-      text-decoration: none;
-      color:white;
+    a {
+      padding: 5px 10px;
+      &:hover {
+        text-decoration: none;
+        color:white;
+      }
     }
   }
 }
@@ -209,8 +216,15 @@ input {
   }
 }
 @media only screen and (max-width: 767px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
   section {
     height: 100%;
+  }
+  .nav-container {
+   padding: 0 15px;
   }
   h2 {
     font-size: 24px;

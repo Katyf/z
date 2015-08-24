@@ -1,7 +1,6 @@
 'use strict';
 
   $(document).ready(function () {
-    console.log('hi hi hi');
 
     //zip code availability
     $('#unavailable').hide();
@@ -12,11 +11,8 @@
       $('#enter-zip').hide();
       if (zipcode === '02116') {
         $('#available').fadeIn();
-        console.log('available!');
       } else {
         $('#unavailable').fadeIn();
-        console.log(zipcode);
-        console.log('unavailable!');
       }
     });
 
@@ -56,12 +52,10 @@
         $('nav').addClass('nav-white');
         $('#nav-logo').hide();
         $('#nav-logo-blue').show();
-        console.log('inversed');
       } else {
        $('nav').removeClass('nav-white');
        $('#nav-logo-blue').hide();
         $('#nav-logo').show();
-       console.log('normal');
       }
     });
 
