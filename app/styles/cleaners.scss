@@ -1,5 +1,12 @@
 #cleaners {
   padding-top: 100px;
+  .steps-container {
+    padding: 20px 0;
+    width: 100%;
+    .circle-step {
+      margin: 0 auto;
+    }
+  }
 }
 
 .cleaners-icon {
