@@ -81,3 +81,20 @@
 
   }
 }
+
+.tooltip.in {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top-color: #53affd;
+  border-width: 5px 5px 0;
+}
+.tooltip-inner {
+  color: #fff;
+  background: #53affd;
+  border: solid 1px #53affd;
+}
