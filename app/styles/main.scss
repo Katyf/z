@@ -220,6 +220,14 @@ input {
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .areas-icon {
+      margin-top: 25px;
+  }
+}
+
+
 @media only screen and (max-width: 767px) {
   body {
     margin: 0;
@@ -260,8 +268,8 @@ input {
     background-color: white;
   }
   .areas-icon {
-    height: 160px;
-    margin-top: 15px;
+    height: 150px;
+    margin-top: 25px;
   }
   #area_specific h3 {
     margin: 25px 0 10px 0;
