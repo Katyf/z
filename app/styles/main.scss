@@ -30,6 +30,14 @@ body {
   }
 }
 
+.extratop {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: -100px;
+  background-color: #53affd;
+}
+
 .container {
   padding: 0;
   margin: 0;
