@@ -52,7 +52,7 @@
       //   console.log('inversed');
       // }else
       //if ($(window).width() > 767){
-        if (pos > whereTop && pos < reqBottom) {
+        if ((pos > whereTop && pos < reqBottom) || pos < 900){
           $('nav').addClass('nav-white');
           $('#nav-logo').hide();
           $('#nav-logo-blue').show();
