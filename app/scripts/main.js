@@ -39,20 +39,10 @@
      $(window).on('scroll', function(){
       //accounting for differing browser and window heights
       var pos = $(window).scrollTop();
-      var sectionHeight = $(document).height() / 10;
-      // var promoTop = sectionHeight * 3;
-      // var promoBottom = sectionHeight * 4;
-      var whereTop = sectionHeight * 7;
-      var reqBottom = sectionHeight * 9 - 5;
+      var blueTop = $('#where_are_we').offset().top - 50;
+      var blueBottom = $('#download').offset().top - 50;
 
-      // if (pos > promoTop && pos < promoBottom) {
-      //   $('nav').addClass('nav-white');
-      //   $('#nav-logo').hide();
-      //   $('#nav-logo-blue').show();
-      //   console.log('inversed');
-      // }else
-      //if ($(window).width() > 767){
-        if ((pos > whereTop && pos < reqBottom) || pos < 900){
+        if (pos >= blueTop && pos <= blueBottom) {
           $('nav').addClass('nav-white');
           $('#nav-logo').hide();
           $('#nav-logo-blue').show();
@@ -61,7 +51,6 @@
           $('#nav-logo-blue').hide();
           $('#nav-logo').show();
         }
-      //}
     });
 
     //phone slider

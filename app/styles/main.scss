@@ -73,6 +73,11 @@ a  {
   .nav-container {
     background-color: white;
     color: #53affd;
+    .navbar-toggle {
+      .icon-bar {
+        background-color: #53affd;
+      }
+    }
     a {
       color: #53affd;
     }
