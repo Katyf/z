@@ -51,7 +51,7 @@
       //   $('#nav-logo-blue').show();
       //   console.log('inversed');
       // }else
-      if ($(window).width() > 767){
+      //if ($(window).width() > 767){
         if (pos > whereTop && pos < reqBottom) {
           $('nav').addClass('nav-white');
           $('#nav-logo').hide();
@@ -61,7 +61,7 @@
           $('#nav-logo-blue').hide();
           $('#nav-logo').show();
         }
-      }
+      //}
     });
 
     //phone slider
