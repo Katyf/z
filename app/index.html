@@ -50,6 +50,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li><a href="#area_specific">About<span class="sr-only">(current)</span></a></li>
+            <li><a href="" data-toggle="modal" data-target=".pricing-modal">Pricing</a></li>
             <li><a href="#how_it_works">How it works</a></li>
             <li><a href="#promo">Promo</a></li>
             <li><a href="#features">Features</a></li>
@@ -58,6 +59,7 @@
             <li><a href="#where_are_we">Where Are We?</a></li>
             <li><a href="#small_req">Requirements</a></li>
             <li><a href="#download">Download</a></li>
+            <li><a href="aboutus.html" target="_blank">About Us</a></li>
           </ul>
         </div>
       </div>
@@ -84,6 +86,13 @@
         </div>
       </div>
     </div>
+
+    <section id="video">
+      <video width="" height="500" controls poster="images/zvidposter.png">
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
 
     <section id="area_specific">
       <h2>Zyp is an easy, on-demand & area-specific cleaning service in Boston</h2>
@@ -121,18 +130,20 @@
                 <ul class="nav nav-tabs" role="tablist">
                   <li role="presentation" class="active"><a href="#areas" aria-controls="areas" role="tab" data-toggle="tab">Area-Specific</a></li>
                   <li role="presentation"><a href="#bundles" aria-controls="bundles" role="tab" data-toggle="tab">Bundles</a></li>
+                  <li role="presentation"><a href="#addons" aria-controls="addons" role="tab" data-toggle="tab">Add-On Items</a></li>
+                  <li role="presentation"><a href="#extras" aria-controls="extras" role="tab" data-toggle="tab">Extras</a></li>
                 </ul>
               </div>
                 <!-- Tab panes -->
               <div class="row pricing-tabs">
                 <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active" id="areas">
+                    <div class="pricing-copy">Choose only the rooms you need</div>
                     <div class="col-md-4">
                       <div class="pricing-options">
                         <h4 class="option">bathroom</h4>
                         <h2 class="price">$24.<sup class="super">99</sup></h2>
                         <p class="price-details">Includes 1 shower/tub, 1 toilet,<br> & 2 sinks<br>
-                        <a class="extradirty" href="#" data-toggle="tooltip" title="For situations such as excessive build up/clutter, post party, or post maintenance.">+$9.99/room Extra Dirty Fee</a>
                         </p>
                       </div>
                     </div>
@@ -141,7 +152,6 @@
                         <h4 class="option">kitchen</h4>
                         <h2 class="price">$34.<sup class="super">99</sup></h2>
                         <p class="price-details">Does not include dishes<br>
-                        <a class="extradirty" href="#" data-toggle="tooltip" title="For situations such as excessive build up/clutter, post party, or post maintenance.">+$9.99/room Extra Dirty Fee</a>
                         </p>
                       </div>
                     </div>
@@ -150,26 +160,72 @@
                         <h4 class="option">living room</h4>
                         <h2 class="price">$19.<sup class="super">99</sup></h2>
                         <p class="price-details">
-                        <a class="extradirty" href="#" data-toggle="tooltip" title="For situations such as excessive build up/clutter, post party, or post maintenance.">+$9.99/room Extra Dirty Fee</a>
                       </div>
                     </div>
                   </div>
                   <div role="tabpanel" class="tab-pane" id="bundles">
-                    <div class="col-md-6">
+                    <div class="pricing-copy">Our awesome combinations</div>
+                    <div class="col-md-3">
+                      <div class="pricing-options">
+                        <h4 class="option">the basics</h4>
+                        <h2 class="price">$39.<sup class="super">99</sup></h2>
+                        <p class="price-details">standard bathroom + living room
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="pricing-options">
+                        <h4 class="option">the Deluxe</h4>
+                        <h2 class="price">$49.<sup class="super">99</sup></h2>
+                        <p class="price-details">standard bathroom + kitchen
+                      </div>
+                    </div>
+                    <div class="col-md-3">
                       <div class="pricing-options">
                         <h4 class="option">the works</h4>
                         <h2 class="price">$59.<sup class="super">99</sup></h2>
-                        <p class="price-details">standard bathroom + kitchen + living room<br>+$4.99/room extra dirty fees</p>
+                        <p class="price-details">standard bathroom + kitchen + living room
                       </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                       <div class="pricing-options">
-                        <h4 class="option">the post-party cleaning</h4>
+                        <h4 class="option">the post-party</h4>
                         <h2 class="price">$74.<sup class="super">99</sup></h2>
                         <p class="price-details">standard bathroom + kitchen + living room<br>All extra dirty fees included</p>
                       </div>
                     </div>
-
+                  </div>
+                  <div role="tabpanel" class="tab-pane active" id="addons">
+                    <div class="pricing-copy">Add any of the following to any cleaning</div>
+                    <div class="col-md-6">
+                      <div class="pricing-options">
+                        <h4 class="option">cleaning supplies</h4>
+                        <h2 class="price">$4.<sup class="super">99</sup></h2>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="pricing-options">
+                        <h4 class="option">dishes</h4>
+                        <h2 class="price">$9.<sup class="super">99</sup></h2>
+                        <p class="price-details">Includes 1 sink load</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane active" id="extras">
+                    <div class="col-md-6">
+                      <div class="pricing-options">
+                        <h4 class="option">Extra Dirty Fee</h4>
+                        <h2 class="price">$4.<sup class="super">99</sup></h2>
+                        <p class="price-details">For situations such as excessive build up/clutter, post party, or post maintenance.</p>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="pricing-options">
+                        <h4 class="option">Subscribe & save!</h4>
+                        <p class="price-details subscribe">Get 10% off weekly cleanings or 5% off bi-weekly cleanings.</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -202,7 +258,7 @@
    <section id="promo">
     <div id="promo-inner">
       <p>Sign up today and receive 20% off your first cleaning with code:</p>
-      <h2>Launch2015</h2>
+      <h2>FIRSTCLEAN</h2>
     </div>
    </section>
 
@@ -212,9 +268,10 @@
       <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide" style="background-image:url(images/iphone2.png)"></div>
-          <div class="swiper-slide" style="background-image:url(images/iphone3.png)"></div>
-          <div class="swiper-slide" style="background-image:url(images/iphone4.png)"></div>
+          <div class="swiper-slide" style="background-image:url(images/img_1242_720.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/img_1244_720.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/img_1246_720.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/img_1509_720.jpg)"></div>
       </div>
       <!-- If we need pagination -->
       <div class="swiper-pagination"></div>
@@ -231,23 +288,18 @@
   <section id="cleaners">
     <h2>Register now & make money on demand!</h2>
     <div class="steps-container row">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="circle-step"><img class="cleaners-icon" src="images/boss.png"></div>
           <h3>Be Your Own Boss</h3>
           <p>Choose when and where you want to work</p>
         </div>
-        <div class="col-md-3">
-          <div class="circle-step"><img class="cleaners-icon" src="images/carry.png"></div>
-          <h3>Customer Provides Supplies</h3>
-          <p> There is no need to lug around a big bag!</p>
-        </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="circle-step"><img class="cleaners-icon" src="images/dollar.png"></div>
           <h3>Direct Deposit Earnings</h3>
           <p>We will zyp your earnings right into your account!</p>
         </div>
-        <div class="col-md-3">
-          <div class="circle-step"><img class="cleaners-icon" src="images/logo.png"></div>
+        <div class="col-md-4">
+          <div class="circle-step"><img class="cleaners-icon logo2" src="images/logo2.png"></div>
           <h3>Zyp Support Team</h3>
           <p>We are always here and ready to help</p>
         </div>
@@ -279,13 +331,12 @@
                 </div>
               </div>
               <div class="row cleaner-modal-row" id="refer">
-                <div class="col-md-12"><h1>Get $5 for every friend you refer!</h1></div>
+                <div class="col-md-12"><h1>How it works</h1></div>
               </div>
               <div class="row cleaner-modal-row">
                 <div class="col-md-4">
                   <div class="benefits zyp-partner"><img class="benefits-icon bottles" src="images/bottleicons.png"></div>
-                  <p class="caption">The customer provides them!<br>
-                    No need to lug around heavy supplies</p>
+                  <p class="caption">Receive $5 every time a customer requests for you to provide them!</p>
                 </div>
                 <div class="col-md-4">
                   <div class="benefits zyp-partner"><img class="benefits-icon" src="images/calwhite.png"></div>
@@ -349,7 +400,7 @@
         <div class="">
           <h4>Split the Bill</h4>
           <img class="whyzyp-icon" src="images/split.png">
-          <p>Easily split the bill with roommates right on the app.</p>
+          <p>Easily split the bill with roommates right in the app.</p>
         </div>
       </div>
       <div class="col-md-3 reason" id="">
@@ -387,14 +438,7 @@
   <section id="small_req">
     <h2>A small requirement from you</h2>
     <div class="row">
-      <div class="col-md-6">
-        <img src="images/bottleicons.png" alt="" id="bottles">
-        <div class="restrict-width">
-          <h4>You provide it, we clean it!</h4>
-          <p>Whether it be 100% plant based or your preferred product. We want to be sure to use what it is that you are used too!</p>
-        </div>
-      </div>
-      <div class="col-md-6">
+      <div class="col-md-12">
         <img src="images/door.png" alt="" id="door">
         <div class="restrict-width">
           <h4>You must be home</h4>
@@ -406,7 +450,7 @@
   </section>
 
   <section id="download">
-    <h2>Coming soon</h2>
+    <h2>Available Now</h2>
     <p>For iOS</p>
     <img id="download-phone" src="images/iphone5.png" alt="download now">
   </section>

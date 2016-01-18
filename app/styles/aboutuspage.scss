@@ -1,0 +1,69 @@
+div.about-us {
+  width: 100%;
+  margin: 0px auto;
+  h1 {
+    text-align: center;
+    font-family: 'Roboto', helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    background-image: url(../images/why-zyp-bg.png);
+    color: white;
+    padding-top: 150px;
+    height: 300px;
+  }
+  .about-section {
+    margin: 20px 0;
+    .about-header {
+      h4 {
+        color: white;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      background-color: #52affd;
+      padding: 5px 5px 5px 150px;
+      width: 400px;
+    }
+    .row {
+      padding: 50px 0 30px 0;
+      width: 80%;
+      margin: 0 auto;
+      .col-md-4 {
+        img {
+          width: 90%;
+          height: 90%;
+          margin: 0 auto;
+        }
+        .caption {
+          text-align: center;
+          color: #53affd;
+          font-size: 20px;
+
+        }
+      }
+    }
+    .story {
+      width: 80%;
+      margin: 0 auto;
+      padding: 50px;
+      font-size: 20px;
+      line-height: 30px;
+      h4 {
+        color: #53affd;
+        font-size: 25px;
+      }
+      .value1 {
+        font-weight: 600;
+      }
+      .value2 {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+}

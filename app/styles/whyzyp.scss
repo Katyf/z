@@ -1,11 +1,14 @@
 #why_zyp {
-  padding: 75px 0;
+  padding: 70px 0;
   //background-color: #292929;
   background-image: url(../images/why-zyp-bg.png);
   background-size: cover;
   color: white;
+  h2 {
+      margin: 0;
+  }
   .row {
-    margin-top: 3%;
+    margin-top: 2%;
     p {
       padding: 20px;
       margin:0;

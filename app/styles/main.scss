@@ -11,6 +11,7 @@ $icon-font-path: '../fonts/';
 @import "download.scss";
 @import "cleaners.scss";
 @import "areaspecific.scss";
+@import "aboutuspage.scss";
 
 // global styles
 
@@ -371,5 +372,25 @@ input {
   }
   #terms-text {
     font-size: 9px;
+  }
+  div.about-us {
+    h1 {
+      margin-bottom: -20px;
+    }
+    .about-section {
+      .about-header {
+        width: 100%;
+        padding: 5px 0px 5px 20px;
+      }
+      .story {
+        width: 100%;
+      }
+      .row {
+        width: 100%;
+        .col-md-4 {
+          padding: 2% 20%;
+        }
+      }
+    }
   }
 }

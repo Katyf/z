@@ -9,7 +9,7 @@
       e.preventDefault();
        var zipcode = $('#zipcode-input').val();
       $('#enter-zip').hide();
-      if (zipcode === '02116') {
+      if (zipcode === '02116' || zipcode === '02452' || zipcode === '02453') {
         $('#available').fadeIn();
       } else {
         $('#unavailable').fadeIn();

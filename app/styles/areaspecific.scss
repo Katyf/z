@@ -52,15 +52,27 @@
   }
   h2.price {
     padding: 0;
-    margin: 40px 0 30px 0;
-    font-size: 70px;
+    margin: 40px 0 15px 0;
+    font-size: 60px;
     sup {
       font-size: 42%;
       top: -1.2em;
     }
   }
+  .pricing-copy {
+    color: #53affd;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
   .tab-pane {
-    padding: 50px 0;
+    padding: 30px 0;
+    &#bundles {
+      .col-md-3 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
   }
   .option {
     text-transform: uppercase;
@@ -78,7 +90,9 @@
     background-color: #292929;
     color: white;
     padding: 40px 30px 0 30px;
-
+    .price-details.subscribe {
+      margin-top: 25%;
+    }
   }
 }
 
