@@ -1,8 +1,13 @@
 #download {
   padding: 100px 0;
   height: 90vh;
+  #download-btn {
+    width: 150px;
+    text-transform: uppercase;
+    margin: 70px auto 0;
+    display: block;
+  }
   #download-phone {
     width: 55%;
-    margin-top: 75px;
   }
 }
