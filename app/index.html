@@ -74,29 +74,30 @@
           <input type="text" id="zipcode-input" placeholder="What's Your Zipcode?">
           <div id="zipcode-submit" class="btn btn-default">Check zipcode</div>
         </form>
-        <form id="unavailable">
+        <div id="unavailable">
           <h3>Coming soon to your area</h3>
           <p>Be alerted when Zyp is in your area and receive 20% off your first cleaning!</p>
-          <!-- Begin MailChimp Signup Form -->
-          <div id="mc_embed_signup">
+        <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+            <div id="mc_embed_signup">
             <form action="//zypcleaners.us12.list-manage.com/subscribe/post?u=164dcf75a7e2e147be258b7aa&amp;id=0526ca04f6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-
+                <div id="mc_embed_signup_scroll">
             <div class="mc-field-group">
-              <input type="email" value="" class="email-input" placeholder="What's Your Email?" name="EMAIL" class="required email" id="mce-EMAIL">
+              <label for="mce-EMAIL"></label>
+              <input type="email" placeholder="What's Your Email?" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_164dcf75a7e2e147be258b7aa_0526ca04f6" tabindex="-1" value=""></div>
-              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_164dcf75a7e2e147be258b7aa_0526ca04f6" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="NOTIFY ME!" name="subscribe" id="mc-embedded-subscribe" class="button btn alert-btn"></div>
+                </div>
             </form>
-          </div>
-          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-          <!--End mc_embed_signup-->
-          <div class="btn alert-btn">NOTIFY ME!</div>
-        </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
+        </div>
         <div id="available">
           <h3>Looks like we're available in your area! Download our iOS app now</h3>
           <div id="download-btn" class="btn alert-btn"><a href="https://itunes.apple.com/us/app/zyp/id976303552?mt=8">Download</a></div>
@@ -452,7 +453,7 @@
   <section id="where_are_we">
     <h2>Where are we?</h2>
     <!-- <div id="map"></div> -->
-   <img src="images/map3.jpg" alt="">
+   <img src="images/map3.png" alt="">
   </section>
 
   <section id="download">

@@ -16,6 +16,12 @@
       }
     });
 
+    //$('#mc-embedded-subscribe-form').on('submit', function(event) {
+      //event.preventDefault();
+      //$('#unavailable').hide();
+      //$('.sub-thanks').show();
+    //});
+
     $('.extradirty').tooltip();
 
     // smooth scrolling
