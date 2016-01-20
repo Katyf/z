@@ -275,10 +275,18 @@ section#video {
   }
   #top #zipcode-overlay {
     padding: 10px;
+    height: 50%;
     input {
-      width: 45%;
+      width: 100%;
       padding: 6px 9px;
       font-size: 12px;
+      margin-top: 0;
+    }
+    .clear {
+      margin-right: 15px;
+      .btn {
+        margin-left: 0;
+      }
     }
   }
   section#video {
@@ -413,5 +421,13 @@ section#video {
         }
       }
     }
+  }
+  //mail chimp overrides
+  #mc_embed_signup div.response {
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    font-weight: normal;
+    width: 100%;
   }
 }
