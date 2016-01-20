@@ -53,6 +53,12 @@
         }
     });
 
+     var numSlides;
+     if ($(window).width() > 767) {
+        numSlides = 3;
+     } else {
+        numSlides = 1;
+     }
     //phone slider
     var mySwiper = new Swiper ('.swiper-container', {
       direction: 'horizontal',
@@ -63,7 +69,7 @@
       effect: 'coverflow',
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: 3,
+      slidesPerView: numSlides,
       coverflow: {
          rotate: -30,
          stretch: 0,
