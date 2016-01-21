@@ -1,26 +1,52 @@
 'use strict';
+var sendForm = function(){
+  //event.preventDefault();
+  var username = 'zyp';
+  var key = '896694c70a83d138014d65c6eb85c2a6-us12';
+  $.ajax({
+      url: 'https://us12.api.mailchimp.com/3.0/lists/97177/members',
+      type: 'POST',
+      dataType: 'JSON',
+      beforeSend: function (xhr) {
+        xhr.setRequestHeader ('Authorization', 'Basic ' + btoa(username + ':' + key));
+      },
+      data: {
+        'email_address': $('#emailinput').val(),
+        'status': 'subscribed',
+        'merge_fields': {
+          'FNAME': 'Katy',
+          'LNAME': 'Feng'
+        }
+      },
+    })
+    .done(function() {
+      console.log("success");
+    })
+    .fail(function() {
+      console.log("error");
+    });
+  };
 
   $(document).ready(function () {
-
     //zip code availability
     $('#unavailable').hide();
     $('#available').hide();
-    $('#enter-zip').on('submit', function(e){
-      e.preventDefault();
-       var zipcode = $('#zipcode-input').val();
-      $('#enter-zip').hide();
-      if (zipcode === '02116' || zipcode === '02452' || zipcode === '02453') {
+    $('#enter-zip').on('submit', function(event){
+      event.preventDefault();
+      var zipcode = $('#zipcode-input').val();
+      $('input#hiddenzip').val(zipcode);
+    $('#enter-zip').hide();
+    if (zipcode === '02116' || zipcode === '02452' || zipcode === '02453') {
         $('#available').fadeIn();
       } else {
         $('#unavailable').fadeIn();
       }
     });
 
-    //$('#mc-embedded-subscribe-form').on('submit', function(event) {
-      //event.preventDefault();
-      //$('#unavailable').hide();
-      //$('.sub-thanks').show();
-    //});
+    $('#unavailable').on('submit', function(e){
+      e.preventDefault();
+      sendForm();
+    });
 
     $('.extradirty').tooltip();
 
@@ -86,4 +112,5 @@
     });
 
   });
+
 
