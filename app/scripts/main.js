@@ -1,31 +1,22 @@
 'use strict';
-var sendForm = function(){
-  //event.preventDefault();
-  var username = 'zyp';
-  var key = '896694c70a83d138014d65c6eb85c2a6-us12';
+var sendEmail = function(){
+  debugger;
   $.ajax({
-      url: 'https://us12.api.mailchimp.com/3.0/lists/97177/members',
-      type: 'POST',
-      dataType: 'JSON',
-      beforeSend: function (xhr) {
-        xhr.setRequestHeader ('Authorization', 'Basic ' + btoa(username + ':' + key));
-      },
-      data: {
-        'email_address': $('#emailinput').val(),
-        'status': 'subscribed',
-        'merge_fields': {
-          'FNAME': 'Katy',
-          'LNAME': 'Feng'
-        }
-      },
-    })
-    .done(function() {
-      console.log("success");
-    })
-    .fail(function() {
-      console.log("error");
-    });
-  };
+    url: '../mail/contact_me.php',
+    type: 'POST',
+    data: {
+      email: $("#emailinput").val(),
+      zipcode: $("#zipcodeinput").val()
+    },
+  })
+  .done(function() {
+    console.log("success");
+  })
+  .fail(function() {
+    console.log("error");
+  });
+
+};
 
   $(document).ready(function () {
     //zip code availability
@@ -43,12 +34,9 @@ var sendForm = function(){
       }
     });
 
-    $('#unavailable').on('submit', function(e){
-      e.preventDefault();
-      sendForm();
-    });
-
-    $('.extradirty').tooltip();
+     $('#unavailable').on('submit', function(e){
+        sendEmail();
+     });
 
     // smooth scrolling
      $('.navbar-collapse a').click(function (e) {
@@ -114,3 +102,31 @@ var sendForm = function(){
   });
 
 
+// var sendForm = function(){
+//   //event.preventDefault();
+//   var username = 'zyp';
+//   var key = '896694c70a83d138014d65c6eb85c2a6-us12';
+//   $.ajax({
+//       url: 'https://us12.api.mailchimp.com/3.0/lists/97177/members',
+//       type: 'POST',
+//       dataType: 'JSON',
+//       beforeSend: function (xhr) {
+//         xhr.setRequestHeader ('Authorization', 'Basic ' + btoa(username + ':' + key));
+//       },
+//       data: {
+//         'email_address': $('#emailinput').val(),
+//         'status': 'subscribed',
+//         'merge_fields': {
+//           'FNAME': 'Katy',
+//           'LNAME': 'Feng'
+//         }
+//       },
+//     })
+//     .done(function() {
+//       console.log("success");
+//       $('.sub-thanks').show();
+//     })
+//     .fail(function() {
+//       console.log("error");
+//     });
+//   };
